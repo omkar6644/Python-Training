@@ -1,6 +1,7 @@
 class Queue:
     def __init__(self):
         self.queue=[]
+
 #add the elements to queue
     def addElement(self,data):
         self.queue=self.queue+[data]
@@ -14,14 +15,15 @@ class Queue:
             return ele
 #Display the elements of queue
     def display(self):
-        return self.queue
+        print(self.queue)
 q=Queue()
 q.addElement(1)
 q.addElement(2)
 q.addElement(3)
-print("Queue after inserting elements",q.display())
+print("Queue after inserting elements")
+q.display()
 q.pop()
 print("Queue after poping:")
-print(q.display())
+q.display()
 
 
