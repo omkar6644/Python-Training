@@ -12,7 +12,7 @@ class Stack:
         else:
             ele=self.s[len(self.s)-1]
             del self.s[len(self.s)-1]
-            return ele
+   
 #Display the elements of stack
     def display(self):
         print(self.s)
