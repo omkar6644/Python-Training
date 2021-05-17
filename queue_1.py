@@ -1,8 +1,6 @@
 class Queue:
     def __init__(self):
         self.queue=[]
-    def isempty(self):
-        return self.queue==[]
 #add the elements to queue
     def addElement(self,data):
         self.queue=self.queue+[data]
@@ -11,9 +9,9 @@ class Queue:
         if self.queue==[]:
             print("queue is empty")
         else:
-            data=self.queue[0]
+            ele=self.queue[0]
             del self.queue[0]
-            return data
+            return ele
 #Display the elements of queue
     def display(self):
         return self.queue
