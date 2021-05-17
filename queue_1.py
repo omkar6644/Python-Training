@@ -10,9 +10,8 @@ class Queue:
         if self.queue==[]:
             print("queue is empty")
         else:
-            ele=self.queue[0]
             del self.queue[0]
-            return ele
+       
 #Display the elements of queue
     def display(self):
         print(self.queue)
