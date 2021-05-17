@@ -1,8 +1,6 @@
 class Stack:
     def __init__(self):
         self.s=[]
-    def isempty(self):
-        return self.s==[]
 #add the elements to stack
     def addElement(self,data):
         self.s=self.s+[data]
@@ -11,9 +9,9 @@ class Stack:
         if self.s==[]:
             return "stack is empty"
         else:
-            data=self.s[len(self.s)-1]
+            ele=self.s[len(self.s)-1]
             del self.s[len(self.s)-1]
-            return data
+            return ele
 #Display the elements of stack
     def display(self):
         return self.s
