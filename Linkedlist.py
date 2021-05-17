@@ -57,7 +57,7 @@ class LinkedList:
     def deleteAftervalue(self, R):
         val = self.head
        
-        while val is not None:
+        while val:
             if val.value==R:
                 val = val.next
                 key=val.value
