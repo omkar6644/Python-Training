@@ -10,7 +10,6 @@ class Stack:
         if self.s==[]:
             return "stack is empty"
         else:
-            ele=self.s[len(self.s)-1]
             del self.s[len(self.s)-1]
    
 #Display the elements of stack
