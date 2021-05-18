@@ -54,6 +54,16 @@ class DoublyLinkedList:
             val = val.next
         return res1
 
+    #getting node before specified value
+    def getNodeBefore(self,data):
+        n=self.head
+        while n is not None:
+            if n.value==data:
+                res=n.prev
+                res1=res.value
+            n=n.next
+        return res1
+
     #reversing the list
     def reverseLinkedlist(self):
         prev = None
@@ -102,6 +112,8 @@ print()
 print()
 print(d.getNodeAfterValue(1))
 print()
+print()
+print(d.getNodeBefore(1))
 print()
 d.reverseLinkedlist()
 d.printList()
