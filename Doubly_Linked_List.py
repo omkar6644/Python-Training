@@ -10,6 +10,15 @@ class DoublyLinkedList:
     #Linkedlist class constructor to initialize head
     def __init__(self):
         self.head = None
+
+    #adding elements to the list
+
+    def add(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        if self.head is not None:
+            self.head.prev = new_node
+        self.head = new_node
     #adding element at beginning of list
     def addAtBegin(self, data):
         new_node = Node(data)
@@ -94,6 +103,8 @@ class DoublyLinkedList:
         
  
 d = DoublyLinkedList()
+d.add(10)
+d.add(20)
 print("adding at beginning")
 d.addAtBegin(1)
 d.addAtBegin(2)
