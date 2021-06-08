@@ -71,3 +71,5 @@ Queries:
 10) update stock_purchased set number_of_stocks_purchased = number_of_stocks_purchased - 1 where id =51 and sell = 'Yes'; (updates number_of_stocks_purchased if the customer wants to sell it)
 
 11) update stock_purchased set number_of_stocks_purchased = number_of_stocks_purchased + 1  where stock_id in  (select stock_id from stock_purchase where buy ='Yes' and id =88 ); (updates number_of_stocks_purchased if the customer wants to buys it using nested query)
+
+12) select * from stock_purchased where purchased_date like '%-05-%'; (select details of customer who have purchased stock in the month of may)
