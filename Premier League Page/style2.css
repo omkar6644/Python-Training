@@ -1,0 +1,44 @@
+header{
+background-image : url("bpl.png");
+height:100vh;
+background-size:cover;
+background-position:center;
+}
+.button{
+position:absolute;
+top:90%;
+left:50%;
+transform: translate(-50%,-50%);
+}              
+.btn{
+border: 1px solid #fff;
+padding: 10px 30px;
+color: #fff;
+text-decoration: none;
+transition:1s ease;
+}  
+.btn:hover{      
+background-color:#fff;
+color: #000;
+}     
+.logo img{
+float: left;
+width:150px;
+height:auto;
+top:80%;
+left:50%;
+transform: translate(-50%,50%);
+}                           
+.main{
+max-width: 1200px;
+margin:auto;
+}  
+h1{
+color:white;
+font-size:60px;
+position:absolute;
+top:5%;
+left:20%;
+font-family:serif;
+}
+         
